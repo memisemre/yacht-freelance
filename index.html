@@ -69,22 +69,22 @@
                                 <p class="info-text">333</p>
                             </div>
                         </div>
-                        <div class="catalog-card-contoller mt-5 row">
-                            <div class="controller-item-wrapper d-flex align-items-center col-4">
+                        <div class="catalog-card-contoller mt-5 d-flex justify-content-center">
+                            <div class="controller-item-wrapper d-flex align-items-center">
                                 <i class="fa-regular fa-hourglass"></i>
                                 <div class="controller-item-container d-flex flex-column">
                                     <p class="controller-item-title">Per hour</p>
                                     <p class="controller-item-text">333 $</p>
                                 </div>
                             </div>
-                            <div class="controller-item-wrapper d-flex align-items-center col-4">
+                            <div class="controller-item-wrapper d-flex align-items-center">
                                 <i class="fa-regular fa-calendar-check"></i>
                                 <div class="controller-item-container d-flex flex-column">
                                     <p class="controller-item-title">Per Day</p>
                                     <p class="controller-item-text">333 $</p>
                                 </div>
                             </div>
-                            <div class="controller-item-wrapper d-flex align-items-center col-4">
+                            <div class="controller-item-wrapper d-flex align-items-center">
                                 <button class="book-now btn">Book Now</button>
                             </div>
                         </div>
@@ -130,22 +130,22 @@
                                 <p class="info-text">333</p>
                             </div>
                         </div>
-                        <div class="catalog-card-contoller mt-5 row">
-                            <div class="controller-item-wrapper d-flex align-items-center col-4">
+                        <div class="catalog-card-contoller mt-5 d-flex justify-content-center">
+                            <div class="controller-item-wrapper d-flex align-items-center">
                                 <i class="fa-regular fa-hourglass"></i>
                                 <div class="controller-item-container d-flex flex-column">
                                     <p class="controller-item-title">Per hour</p>
                                     <p class="controller-item-text">333 $</p>
                                 </div>
                             </div>
-                            <div class="controller-item-wrapper d-flex align-items-center col-4">
+                            <div class="controller-item-wrapper d-flex align-items-center">
                                 <i class="fa-regular fa-calendar-check"></i>
                                 <div class="controller-item-container d-flex flex-column">
                                     <p class="controller-item-title">Per Day</p>
                                     <p class="controller-item-text">333 $</p>
                                 </div>
                             </div>
-                            <div class="controller-item-wrapper d-flex align-items-center col-4">
+                            <div class="controller-item-wrapper d-flex align-items-center">
                                 <button class="book-now btn">Book Now</button>
                             </div>
                         </div>
@@ -161,6 +161,17 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c2e884e60d.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const BOOK_NOW_BTNS = document.querySelectorAll(".book-now");
+        console.log(BOOK_NOW_BTNS);
+        BOOK_NOW_BTNS.forEach((item)=>{
+            item.addEventListener('click',()=>{
+                console.log("clicked")
+            });
+        });
+    });
+    </script>
 </body>
 
 </html>

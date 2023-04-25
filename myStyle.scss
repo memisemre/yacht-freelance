@@ -28,6 +28,23 @@ $background-linear: linear-gradient(to left,#333a4b,#232835);
 .container{
     padding: 0 !important;
 }
+ul {
+    list-style: none;
+    li{
+        display: flex;
+        align-items: center;
+        &::before{
+            display: inline-block;
+            margin-right: 4px;
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $primary-red;
+            font-size: 16px;
+        }
+    }
+}
 #homePage{
     #onBoarding-text{
         background: $background-linear;
@@ -73,23 +90,7 @@ $background-linear: linear-gradient(to left,#333a4b,#232835);
                     color: $blue-text;
                     font-weight: 700;
                 }
-                ul {
-                    list-style: none;
-                    li{
-                        display: flex;
-                        align-items: center;
-                        &::before{
-                            display: inline-block;
-                            margin-right: 4px;
-                            content: '';
-                            width: 8px;
-                            height: 8px;
-                            border-radius: 50%;
-                            background-color: $primary-red;
-                            font-size: 16px;
-                        }
-                    }
-                }
+                
                 .yacht-infos-container{
                     .yacht-info{
                         border-right: 2px solid white;
@@ -115,41 +116,33 @@ $background-linear: linear-gradient(to left,#333a4b,#232835);
             }
             .controller-item-wrapper{
                 position: relative;
-                &:after{
-                    display: inline-block;
-                    position: absolute;
-                    border: 2px solid $thirdy-red;
-                    content: '';
-                    width: 32px;
-                    transform: rotate(90deg);
-                    right: 10%;
-                }
-                &:last-child{
+                .controller-item-container{
+                    margin-right: 48px;
                     &:after{
-                        display: none;
+                        margin: 0;
+                    }
+                    .controller-item-title{
+                        font-size: 12px;
+                        font-weight: 300;
+                        text-transform: uppercase;
                     }
                 }
                 i{
-                    font-size: 48px;
+                    font-size: 24px;
                     color: $primary-red;
-                    margin-right: 32px;
+                    margin-right: 16px;
                 }
-                .controller-item-title{
-                    font-size: 12px;
-                    font-weight: 300;
-                    text-transform: uppercase;
-                }
+                
                 .btn{
                     padding: 12px 24px!important;
                     border-radius: 8px;
-                    background-color: $thirdy-red;
-                    border: 4px solid $primary-red;
-                    color: $white;
+                    border: 2px solid $primary-red;
+                    color: $primary-red;
                     font-weight: 700;
                     transition: 500ms all ease-out;
                     &:hover{
-                        background-color: $white;
-                        color: $primary-red;
+                        background-color:$thirdy-red;
+                        color: $white;
                         transform: scale(1.1);
                     }
                 }
