@@ -40,12 +40,61 @@ ul {
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background-color: $primary-red;
+            background-color: $thirdy-red;
             font-size: 16px;
         }
     }
 }
 #homePage{
+    #otherInfos-list{
+        background: $background-linear;
+        .otherInfos-wrapper{
+            .otherInfos-container{
+                padding: 32px;
+                margin-top: 32px;
+                &:nth-child(even){
+                    flex-direction: row-reverse;
+                    .text-area{
+                        margin-right: 0;
+                        margin-left: 32px;
+                    }
+                }
+                &:first-child{
+                    margin: 0;
+                }
+                .text-area{
+                    max-width: 480px;
+                    margin-right: 32px;
+                    h3{
+                        color: $white;
+                        transition: 500ms all ease;
+                        &:hover{
+                            color: $thirdy-red;
+                        }
+                    }
+                    .stick{
+                        width: 48px;
+                        height: 4px;
+                        background-color: $primary-red;
+                        border-radius: 8px;
+                    }
+                    p{
+                        color: $secondary-gray;
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                }
+                .img-area{
+                    max-width: 480px;
+                    img{
+                        width: 100%;
+                        border-radius: 50% 20% / 10% 40%;
+                    }
+                }
+
+            }
+        }
+    }
     #onBoarding-text{
         background: $background-linear;
         flex-direction: column;

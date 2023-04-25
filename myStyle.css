@@ -30,9 +30,43 @@ ul {
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background-color: #D21312;
+      background-color: #F15A59;
       font-size: 16px; }
 
+#homePage #otherInfos-list {
+  background: linear-gradient(to left, #333a4b, #232835); }
+  #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container {
+    padding: 32px;
+    margin-top: 32px; }
+    #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container:nth-child(even) {
+      flex-direction: row-reverse; }
+      #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container:nth-child(even) .text-area {
+        margin-right: 0;
+        margin-left: 32px; }
+    #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container:first-child {
+      margin: 0; }
+    #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area {
+      max-width: 480px;
+      margin-right: 32px; }
+      #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area h3 {
+        color: #FFFFFF;
+        transition: 500ms all ease; }
+        #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area h3:hover {
+          color: #F15A59; }
+      #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area .stick {
+        width: 48px;
+        height: 4px;
+        background-color: #D21312;
+        border-radius: 8px; }
+      #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area p {
+        color: #7B7D7D;
+        font-size: 14px;
+        font-weight: 300; }
+    #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .img-area {
+      max-width: 480px; }
+      #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .img-area img {
+        width: 100%;
+        border-radius: 50% 20% / 10% 40%; }
 #homePage #onBoarding-text {
   background: linear-gradient(to left, #333a4b, #232835);
   flex-direction: column;
