@@ -15,7 +15,7 @@ $primary-red: #D21312;
 $secondary-red: #ED2B2A;
 $thirdy-red: #F15A59;
 $white: #FFFFFF;
-$primay-gray: #ECF0F1;
+$primary-gray: #f2f2f2;
 $secondary-gray: #7B7D7D;
 $background-linear: linear-gradient(to left,#333a4b,#232835);
 .flexible-wrapper{
@@ -27,7 +27,6 @@ $background-linear: linear-gradient(to left,#333a4b,#232835);
 }
 .container{
     padding: 0 !important;
-
 }
 #homePage{
     #onBoarding-text{
@@ -50,6 +49,109 @@ $background-linear: linear-gradient(to left,#333a4b,#232835);
                 transition: 500ms all ease-in-out;
                 &:hover{
                     color: $secondary-red;
+                }
+            }
+        }
+    }
+    #yachts-catalog{
+        background: $primary-gray;
+        flex-direction: column;
+        p{
+            margin: 0;
+        }
+        .container{
+            margin-bottom: 48px;
+                &:last-child{
+                    margin: 0;
+                }
+            .catalog-card-wrapper{
+                border-radius: 8px;
+                background: $white;
+                padding: 32px;
+                .yacht-name{
+                    font-size: 48px;
+                    color: $blue-text;
+                    font-weight: 700;
+                }
+                ul {
+                    list-style: none;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        &::before{
+                            display: inline-block;
+                            margin-right: 4px;
+                            content: '';
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background-color: $primary-red;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .yacht-infos-container{
+                    .yacht-info{
+                        border-right: 2px solid white;
+                        background-color: $primary-gray;
+                        padding: 8px 16px;
+                        border-radius: 2px;
+                        .info-title{
+                            font-size: 14px;
+                            font-weight: 300;
+                        }
+                        .info-text{
+                            font-size: 20px;
+                            font-weight: 500;
+                            margin-left: 4px;
+                        }
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                border-top-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+            }
+            .controller-item-wrapper{
+                position: relative;
+                &:after{
+                    display: inline-block;
+                    position: absolute;
+                    border: 2px solid $thirdy-red;
+                    content: '';
+                    width: 32px;
+                    transform: rotate(90deg);
+                    right: 10%;
+                }
+                &:last-child{
+                    &:after{
+                        display: none;
+                    }
+                }
+                i{
+                    font-size: 48px;
+                    color: $primary-red;
+                    margin-right: 32px;
+                }
+                .controller-item-title{
+                    font-size: 12px;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                }
+                .btn{
+                    padding: 12px 24px!important;
+                    border-radius: 8px;
+                    background-color: $thirdy-red;
+                    border: 4px solid $primary-red;
+                    color: $white;
+                    font-weight: 700;
+                    transition: 500ms all ease-out;
+                    &:hover{
+                        background-color: $white;
+                        color: $primary-red;
+                        transform: scale(1.1);
+                    }
                 }
             }
         }

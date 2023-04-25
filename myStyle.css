@@ -36,5 +36,84 @@ a {
       transition: 500ms all ease-in-out; }
       #homePage #onBoarding-text p a:hover {
         color: #ED2B2A; }
+#homePage #yachts-catalog {
+  background: #f2f2f2;
+  flex-direction: column; }
+  #homePage #yachts-catalog p {
+    margin: 0; }
+  #homePage #yachts-catalog .container {
+    margin-bottom: 48px; }
+    #homePage #yachts-catalog .container:last-child {
+      margin: 0; }
+    #homePage #yachts-catalog .container .catalog-card-wrapper {
+      border-radius: 8px;
+      background: #FFFFFF;
+      padding: 32px; }
+      #homePage #yachts-catalog .container .catalog-card-wrapper .yacht-name {
+        font-size: 48px;
+        color: #070A52;
+        font-weight: 700; }
+      #homePage #yachts-catalog .container .catalog-card-wrapper ul {
+        list-style: none; }
+        #homePage #yachts-catalog .container .catalog-card-wrapper ul li {
+          display: flex;
+          align-items: center; }
+          #homePage #yachts-catalog .container .catalog-card-wrapper ul li::before {
+            display: inline-block;
+            margin-right: 4px;
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #D21312;
+            font-size: 16px; }
+      #homePage #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info {
+        border-right: 2px solid white;
+        background-color: #f2f2f2;
+        padding: 8px 16px;
+        border-radius: 2px; }
+        #homePage #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info .info-title {
+          font-size: 14px;
+          font-weight: 300; }
+        #homePage #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info .info-text {
+          font-size: 20px;
+          font-weight: 500;
+          margin-left: 4px; }
+    #homePage #yachts-catalog .container img {
+      width: 100%;
+      border-top-left-radius: 16px;
+      border-bottom-right-radius: 16px; }
+    #homePage #yachts-catalog .container .controller-item-wrapper {
+      position: relative; }
+      #homePage #yachts-catalog .container .controller-item-wrapper:after {
+        display: inline-block;
+        position: absolute;
+        border: 2px solid #F15A59;
+        content: '';
+        width: 32px;
+        transform: rotate(90deg);
+        right: 10%; }
+      #homePage #yachts-catalog .container .controller-item-wrapper:last-child:after {
+        display: none; }
+      #homePage #yachts-catalog .container .controller-item-wrapper i {
+        font-size: 48px;
+        color: #D21312;
+        margin-right: 32px; }
+      #homePage #yachts-catalog .container .controller-item-wrapper .controller-item-title {
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase; }
+      #homePage #yachts-catalog .container .controller-item-wrapper .btn {
+        padding: 12px 24px !important;
+        border-radius: 8px;
+        background-color: #F15A59;
+        border: 4px solid #D21312;
+        color: #FFFFFF;
+        font-weight: 700;
+        transition: 500ms all ease-out; }
+        #homePage #yachts-catalog .container .controller-item-wrapper .btn:hover {
+          background-color: #FFFFFF;
+          color: #D21312;
+          transform: scale(1.1); }
 
 /*# sourceMappingURL=myStyle.css.map */
