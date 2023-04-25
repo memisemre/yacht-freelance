@@ -33,164 +33,209 @@ ul {
       background-color: #F15A59;
       font-size: 16px; }
 
-#homePage #packageList {
+#welcomeSlide .row {
+  margin: 0; }
+#welcomeSlide .welcomeSlide-container {
+  max-width: 980px;
+  width: 100%; }
+  #welcomeSlide .welcomeSlide-container .welcomeSlide-item {
+    padding: 0 !important;
+    position: relative; }
+    #welcomeSlide .welcomeSlide-container .welcomeSlide-item a img {
+      transition: 500ms all ease;
+      width: 100%; }
+    #welcomeSlide .welcomeSlide-container .welcomeSlide-item a p {
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+      color: #FFFFFF;
+      font-weight: 700;
+      margin-bottom: 0; }
+    #welcomeSlide .welcomeSlide-container .welcomeSlide-item a .icon-container {
+      position: absolute;
+      bottom: 6px;
+      right: 14px;
+      width: 32px;
+      height: 32px;
+      border: 1px solid transparent;
+      transition: 300ms all ease;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #welcomeSlide .welcomeSlide-container .welcomeSlide-item a .icon-container i {
+        color: #FFFFFF;
+        opacity: 0;
+        transition: 800ms all ease; }
+    #welcomeSlide .welcomeSlide-container .welcomeSlide-item a:hover img {
+      transform: scale(1.1); }
+    #welcomeSlide .welcomeSlide-container .welcomeSlide-item a:hover .icon-container {
+      border-color: #FFFFFF; }
+      #welcomeSlide .welcomeSlide-container .welcomeSlide-item a:hover .icon-container i {
+        opacity: 1;
+        transform: rotate(360deg); }
+
+#packageList {
   background-color: #F0F2F8;
   padding: 64px 0; }
-  #homePage #packageList .package-list-wrapper {
+  #packageList .package-list-wrapper {
     padding: 32px;
     border-radius: 8px; }
-    #homePage #packageList .package-list-wrapper .package-title-container {
+    #packageList .package-list-wrapper .package-title-container {
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 24px; }
-      #homePage #packageList .package-list-wrapper .package-title-container i {
+      #packageList .package-list-wrapper .package-title-container i {
         margin-right: 16px; }
-      #homePage #packageList .package-list-wrapper .package-title-container a {
+      #packageList .package-list-wrapper .package-title-container a {
         color: #070A52; }
-    #homePage #packageList .package-list-wrapper .package-desc {
+    #packageList .package-list-wrapper .package-desc {
       font-size: 14px;
       font-weight: 300; }
-    #homePage #packageList .package-list-wrapper .package-product-card {
+    #packageList .package-list-wrapper .package-product-card {
       margin-top: 20px; }
-      #homePage #packageList .package-list-wrapper .package-product-card:first-child {
+      #packageList .package-list-wrapper .package-product-card:first-child {
         margin: 0; }
-      #homePage #packageList .package-list-wrapper .package-product-card img {
+      #packageList .package-list-wrapper .package-product-card img {
         width: 240px;
         margin-right: 24px;
         border-radius: 8px; }
-      #homePage #packageList .package-list-wrapper .package-product-card .cardInfoWrapper {
+      #packageList .package-list-wrapper .package-product-card .cardInfoWrapper {
         width: 100%; }
-        #homePage #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .yacht-name {
+        #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .yacht-name {
           font-weight: 700;
           font-size: 24px; }
-        #homePage #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .yacht-price {
+        #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .yacht-price {
           font-weight: 700; }
-          #homePage #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .yacht-price span {
+          #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .yacht-price span {
             font-weight: 300;
             font-size: 12px; }
-        #homePage #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .cardInfoContainer .otherInfos .otherInfo-container {
+        #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .cardInfoContainer .otherInfos .otherInfo-container {
           margin-right: 16px;
           text-align: center; }
-          #homePage #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .cardInfoContainer .otherInfos .otherInfo-container:last-child {
+          #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .cardInfoContainer .otherInfos .otherInfo-container:last-child {
             margin: 0; }
-        #homePage #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .cardInfoContainer .link-container a {
+        #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .cardInfoContainer .link-container a {
           padding: 12px 24px !important;
           border-radius: 8px;
           border: 2px solid #D21312;
           color: #D21312;
           font-weight: 700;
           transition: 500ms all ease-out; }
-          #homePage #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .cardInfoContainer .link-container a:hover {
+          #packageList .package-list-wrapper .package-product-card .cardInfoWrapper .cardInfoContainer .link-container a:hover {
             background-color: #F15A59;
             color: #FFFFFF; }
-#homePage #otherInfos-list {
+
+#otherInfos-list {
   background: linear-gradient(to left, #333a4b, #232835); }
-  #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container {
+  #otherInfos-list .otherInfos-wrapper .otherInfos-container {
     padding: 32px;
     margin-top: 32px; }
-    #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container:nth-child(even) {
+    #otherInfos-list .otherInfos-wrapper .otherInfos-container:nth-child(even) {
       flex-direction: row-reverse; }
-      #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container:nth-child(even) .text-area {
+      #otherInfos-list .otherInfos-wrapper .otherInfos-container:nth-child(even) .text-area {
         margin-right: 0;
         margin-left: 32px; }
-    #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container:first-child {
+    #otherInfos-list .otherInfos-wrapper .otherInfos-container:first-child {
       margin: 0; }
-    #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area {
+    #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area {
       max-width: 480px;
       margin-right: 32px; }
-      #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area h3 {
+      #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area h3 {
         color: #FFFFFF;
         transition: 500ms all ease; }
-        #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area h3:hover {
+        #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area h3:hover {
           color: #F15A59; }
-      #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area .stick {
+      #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area .stick {
         width: 48px;
         height: 4px;
         background-color: #D21312;
         border-radius: 8px; }
-      #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area p {
+      #otherInfos-list .otherInfos-wrapper .otherInfos-container .text-area p {
         color: #7B7D7D;
         font-size: 14px;
         font-weight: 300; }
-    #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .img-area {
+    #otherInfos-list .otherInfos-wrapper .otherInfos-container .img-area {
       max-width: 480px; }
-      #homePage #otherInfos-list .otherInfos-wrapper .otherInfos-container .img-area img {
+      #otherInfos-list .otherInfos-wrapper .otherInfos-container .img-area img {
         width: 100%;
         border-radius: 50% 20% / 10% 40%; }
-#homePage #onBoarding-text {
+
+#onBoarding-text {
   background: linear-gradient(to left, #333a4b, #232835);
   flex-direction: column;
   text-align: center; }
-  #homePage #onBoarding-text h2 {
+  #onBoarding-text h2 {
     color: #FFFFFF;
     transition: 300ms all ease-in-out; }
-    #homePage #onBoarding-text h2:hover {
+    #onBoarding-text h2:hover {
       color: #F15A59 !important; }
-  #homePage #onBoarding-text p {
+  #onBoarding-text p {
     color: #7B7D7D;
     font-size: 14px;
     font-weight: 300; }
-    #homePage #onBoarding-text p a {
+    #onBoarding-text p a {
       color: #F15A59;
       transition: 500ms all ease-in-out; }
-      #homePage #onBoarding-text p a:hover {
+      #onBoarding-text p a:hover {
         color: #ED2B2A; }
-#homePage #yachts-catalog {
+
+#yachts-catalog {
   background: #F0F2F8;
   flex-direction: column; }
-  #homePage #yachts-catalog p {
+  #yachts-catalog p {
     margin: 0; }
-  #homePage #yachts-catalog .container {
+  #yachts-catalog .container {
     margin-bottom: 48px; }
-    #homePage #yachts-catalog .container:last-child {
+    #yachts-catalog .container:last-child {
       margin: 0; }
-    #homePage #yachts-catalog .container .catalog-card-wrapper {
+    #yachts-catalog .container .catalog-card-wrapper {
       border-radius: 8px;
       background: #FFFFFF;
       padding: 32px; }
-      #homePage #yachts-catalog .container .catalog-card-wrapper .yacht-name {
+      #yachts-catalog .container .catalog-card-wrapper .yacht-name {
         font-size: 48px;
         color: #070A52;
         font-weight: 700; }
-      #homePage #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info {
+      #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info {
         border-right: 2px solid white;
         background-color: #f2f2f2;
         padding: 8px 16px;
         border-radius: 2px; }
-        #homePage #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info .info-title {
+        #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info .info-title {
           font-size: 14px;
           font-weight: 300; }
-        #homePage #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info .info-text {
+        #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info .info-text {
           font-size: 20px;
           font-weight: 500;
           margin-left: 4px; }
-    #homePage #yachts-catalog .container img {
+    #yachts-catalog .container img {
       width: 100%;
       border-top-left-radius: 16px;
       border-bottom-right-radius: 16px; }
-    #homePage #yachts-catalog .container .controller-item-wrapper {
+    #yachts-catalog .container .controller-item-wrapper {
       position: relative; }
-      #homePage #yachts-catalog .container .controller-item-wrapper .controller-item-container {
+      #yachts-catalog .container .controller-item-wrapper .controller-item-container {
         margin-right: 48px; }
-        #homePage #yachts-catalog .container .controller-item-wrapper .controller-item-container:after {
+        #yachts-catalog .container .controller-item-wrapper .controller-item-container:after {
           margin: 0; }
-        #homePage #yachts-catalog .container .controller-item-wrapper .controller-item-container .controller-item-title {
+        #yachts-catalog .container .controller-item-wrapper .controller-item-container .controller-item-title {
           font-size: 12px;
           font-weight: 300;
           text-transform: uppercase; }
-      #homePage #yachts-catalog .container .controller-item-wrapper i {
+      #yachts-catalog .container .controller-item-wrapper i {
         font-size: 24px;
         color: #D21312;
         margin-right: 16px; }
-      #homePage #yachts-catalog .container .controller-item-wrapper .btn {
+      #yachts-catalog .container .controller-item-wrapper .btn {
         padding: 12px 24px !important;
         border-radius: 8px;
         border: 2px solid #D21312;
         color: #D21312;
         font-weight: 700;
         transition: 500ms all ease-out; }
-        #homePage #yachts-catalog .container .controller-item-wrapper .btn:hover {
+        #yachts-catalog .container .controller-item-wrapper .btn:hover {
           background-color: #F15A59;
           color: #FFFFFF;
           transform: scale(1.1); }
