@@ -18,6 +18,7 @@ $white: #FFFFFF;
 $primary-gray: #f2f2f2;
 $secondary-gray: #7B7D7D;
 $background-linear: linear-gradient(to left,#333a4b,#232835);
+$background-gray: #F0F2F8;
 .flexible-wrapper{
     display: flex;
     align-items: center;
@@ -46,6 +47,80 @@ ul {
     }
 }
 #homePage{
+    #packageList{
+        background-color: $background-gray;
+        padding: 64px 0;
+        .package-list-wrapper{
+            padding: 32px;
+            border-radius: 8px;
+            .package-title-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                i{
+                    margin-right: 16px;
+                }
+                a{
+                    color: $blue-text;
+                }
+            }
+            .package-desc{
+                font-size: 14px;
+                font-weight: 300;
+            }
+            .package-product-card{
+                margin-top: 20px;
+                &:first-child{
+                    margin: 0;
+                }
+                img{
+                    width: 240px;
+                    margin-right: 24px;
+                    border-radius: 8px;
+                }
+                .cardInfoWrapper{
+                    width: 100%;
+                    .yacht-name{
+                        font-weight: 700;
+                        font-size: 24px;
+                    }
+                    .yacht-price{
+                        font-weight: 700;
+                        span{
+                            font-weight: 300;
+                            font-size: 12px;
+                        }
+                    }
+                    .cardInfoContainer{
+                        .otherInfos{
+                            .otherInfo-container{
+                                margin-right: 16px;
+                                text-align: center;
+                                &:last-child{
+                                    margin: 0;
+                                }
+                            }
+                        }
+                        .link-container{
+                            a{
+                                padding: 12px 24px!important;
+                                border-radius: 8px;
+                                border: 2px solid $primary-red;
+                                color: $primary-red;
+                                font-weight: 700;
+                                transition: 500ms all ease-out;
+                                &:hover{
+                                    background-color:$thirdy-red;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     #otherInfos-list{
         background: $background-linear;
         .otherInfos-wrapper{
@@ -120,7 +195,7 @@ ul {
         }
     }
     #yachts-catalog{
-        background: $primary-gray;
+        background: $background-gray;
         flex-direction: column;
         p{
             margin: 0;
