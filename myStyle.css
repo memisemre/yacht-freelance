@@ -1,12 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none !important; }
 
-.osman h1 {
-  color: red; }
+.flexible-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 32px 0; }
+
+.container {
+  padding: 0 !important; }
+
+#homePage #onBoarding-text {
+  background: linear-gradient(to left, #333a4b, #232835);
+  flex-direction: column;
+  text-align: center; }
+  #homePage #onBoarding-text h2 {
+    color: #FFFFFF;
+    transition: 300ms all ease-in-out; }
+    #homePage #onBoarding-text h2:hover {
+      color: #F15A59 !important; }
+  #homePage #onBoarding-text p {
+    color: #7B7D7D;
+    font-size: 14px;
+    font-weight: 300; }
+    #homePage #onBoarding-text p a {
+      color: #F15A59;
+      transition: 500ms all ease-in-out; }
+      #homePage #onBoarding-text p a:hover {
+        color: #ED2B2A; }
 
 /*# sourceMappingURL=myStyle.css.map */
