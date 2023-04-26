@@ -33,6 +33,42 @@ ul {
       background-color: #F15A59;
       font-size: 16px; }
 
+header {
+  margin-bottom: 24px; }
+  header .topBody {
+    border-bottom: 2px solid #f2f2f2; }
+    header .topBody a {
+      color: #070A52; }
+      header .topBody a i {
+        margin-right: 6px; }
+    header .topBody img {
+      height: 80px; }
+  header nav {
+    padding: 12px 0; }
+    header nav a {
+      color: #070A52;
+      font-weight: 700;
+      margin-right: 20px;
+      transition: 300ms all ease;
+      position: relative; }
+      header nav a:after {
+        transition: 500ms all ease;
+        content: '';
+        opacity: 0;
+        position: absolute;
+        background-color: #D21312;
+        width: 100%;
+        height: 4px;
+        border-radius: 8px;
+        bottom: -8px;
+        left: 0;
+        transform: scaleX(0); }
+      header nav a.active, header nav a:hover {
+        color: #D21312; }
+        header nav a.active:after, header nav a:hover:after {
+          transform: scaleX(1);
+          opacity: 1; }
+
 #welcomeSlide .row {
   margin: 0; }
 #welcomeSlide .welcomeSlide-container {
