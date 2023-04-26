@@ -321,20 +321,25 @@ footer {
   footer .links-area {
     max-width: 360px;
     width: 100%; }
-    footer .links-area ul li {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 8px; }
-      footer .links-area ul li:before {
-        display: none; }
-      footer .links-area ul li:first-child {
-        margin-top: 0; }
-      footer .links-area ul li a {
-        color: #070A52;
-        transition: 300ms all ease;
-        font-weight: 500; }
-        footer .links-area ul li a:hover {
-          color: #D21312; }
+    footer .links-area .list-container ul {
+      padding: 0 !important;
+      margin: 0;
+      margin-right: 32px; }
+      footer .links-area .list-container ul li {
+        width: 100%;
+        margin-top: 8px; }
+        footer .links-area .list-container ul li:before {
+          display: none; }
+        footer .links-area .list-container ul li:first-child {
+          margin-bottom: 16px;
+          font-weight: bold;
+          margin-top: 0; }
+        footer .links-area .list-container ul li a {
+          color: #070A52;
+          transition: 300ms all ease;
+          font-weight: 500; }
+          footer .links-area .list-container ul li a:hover {
+            color: #D21312; }
   footer .copyRight-text {
     margin-top: 16px;
     border-top: 1px solid #070A52;

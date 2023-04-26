@@ -529,32 +529,38 @@ footer {
         max-width: 360px;
         width: 100%;
 
-        ul {
-            li {
-                display: flex;
-                justify-content: flex-end;
+        .list-container {
+            ul {
+                padding: 0 !important;
+                margin: 0;
+                margin-right: 32px;
+                li {
+                    width: 100%;
+                    &:before {
+                        display: none;
+                    }
 
-                &:before {
-                    display: none;
-                }
+                    margin-top: 8px;
 
-                margin-top: 8px;
+                    &:first-child {
+                        margin-bottom: 16px;
+                        font-weight: bold;
+                        margin-top: 0;
+                    }
 
-                &:first-child {
-                    margin-top: 0;
-                }
+                    a {
+                        color: $blue-text;
+                        transition: 300ms all ease;
+                        font-weight: 500;
 
-                a {
-                    color: $blue-text;
-                    transition: 300ms all ease;
-                    font-weight: 500;
-
-                    &:hover {
-                        color: $primary-red;
+                        &:hover {
+                            color: $primary-red;
+                        }
                     }
                 }
             }
         }
+
     }
 
     .copyRight-text {
