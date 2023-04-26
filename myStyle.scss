@@ -60,7 +60,11 @@ header {
 
         a {
             color: $blue-text;
-
+            font-weight: bold;
+            transition: 500ms all ease;
+            &:hover{
+                color: $primary-red;
+            }
             i {
                 margin-right: 6px;
             }

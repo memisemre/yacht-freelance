@@ -38,7 +38,11 @@ header {
   header .topBody {
     border-bottom: 2px solid #f2f2f2; }
     header .topBody a {
-      color: #070A52; }
+      color: #070A52;
+      font-weight: bold;
+      transition: 500ms all ease; }
+      header .topBody a:hover {
+        color: #D21312; }
       header .topBody a i {
         margin-right: 6px; }
     header .topBody img {
