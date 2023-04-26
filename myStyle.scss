@@ -55,6 +55,7 @@ ul {
 
 header {
     margin-bottom: 24px;
+
     .topBody {
         border-bottom: 2px solid $primary-gray;
 
@@ -62,9 +63,11 @@ header {
             color: $blue-text;
             font-weight: bold;
             transition: 500ms all ease;
-            &:hover{
+
+            &:hover {
                 color: $primary-red;
             }
+
             i {
                 margin-right: 6px;
             }
@@ -84,6 +87,7 @@ header {
             margin-right: 20px;
             transition: 300ms all ease;
             position: relative;
+
             &:after {
                 transition: 500ms all ease;
                 content: '';
@@ -101,6 +105,7 @@ header {
             &.active,
             &:hover {
                 color: $primary-red;
+
                 &:after {
                     transform: scaleX(1);
                     opacity: 1;
@@ -451,6 +456,110 @@ header {
                     transform: scale(1.1);
                 }
             }
+        }
+    }
+}
+
+footer {
+    background-color: $background-gray;
+    width: 100%;
+    padding: 32px 64px 0 64px;
+
+    .companyInfos-area {
+        a {
+            color: $blue-text;
+            display: block;
+
+            i {
+                margin-right: 8px;
+            }
+        }
+
+        img {
+            height: 100px;
+        }
+
+        .adress {
+            i {
+                margin-right: 8px;
+            }
+
+            p {
+                max-width: 360px;
+                margin: 0;
+            }
+        }
+
+        .socialMedia-infos {
+            .socialMedia-container {
+                margin-right: 16px;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                a {
+                    background: $background-linear;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    color: $white;
+                    font-weight: 700;
+                    justify-content: center;
+                    border-radius: 50%;
+                    transition: 400ms all ease-in-out;
+                    margin: 0;
+
+                    &:hover {
+                        color: $primary-red;
+                        transform: rotate(360deg)
+                    }
+
+                    i {
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .links-area {
+        max-width: 360px;
+        width: 100%;
+        ul {
+            li {
+                display: flex;
+                justify-content: flex-end;
+                &:before {
+                    display: none;
+                }
+                margin-top: 8px;
+                &:first-child{
+                    margin-top:0;
+                }
+                a {
+                    color: $blue-text;
+                    transition: 300ms all ease;
+                    font-weight: 500;
+                    
+                    &:hover {
+                        color: $primary-red;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyRight-text {
+        margin-top: 16px;
+        border-top: 1px solid $blue-text;
+        padding-top: 12px;
+
+        p {
+            font-size: 14px;
+            font-weight: 700;
         }
     }
 }

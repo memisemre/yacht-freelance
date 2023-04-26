@@ -280,4 +280,67 @@ header {
           color: #FFFFFF;
           transform: scale(1.1); }
 
+footer {
+  background-color: #F0F2F8;
+  width: 100%;
+  padding: 32px 64px 0 64px; }
+  footer .companyInfos-area a {
+    color: #070A52;
+    display: block; }
+    footer .companyInfos-area a i {
+      margin-right: 8px; }
+  footer .companyInfos-area img {
+    height: 100px; }
+  footer .companyInfos-area .adress i {
+    margin-right: 8px; }
+  footer .companyInfos-area .adress p {
+    max-width: 360px;
+    margin: 0; }
+  footer .companyInfos-area .socialMedia-infos .socialMedia-container {
+    margin-right: 16px; }
+    footer .companyInfos-area .socialMedia-infos .socialMedia-container:last-child {
+      margin: 0; }
+    footer .companyInfos-area .socialMedia-infos .socialMedia-container a {
+      background: linear-gradient(to left, #333a4b, #232835);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      color: #FFFFFF;
+      font-weight: 700;
+      justify-content: center;
+      border-radius: 50%;
+      transition: 400ms all ease-in-out;
+      margin: 0; }
+      footer .companyInfos-area .socialMedia-infos .socialMedia-container a:hover {
+        color: #D21312;
+        transform: rotate(360deg); }
+      footer .companyInfos-area .socialMedia-infos .socialMedia-container a i {
+        margin: 0 !important; }
+  footer .links-area {
+    max-width: 360px;
+    width: 100%; }
+    footer .links-area ul li {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 8px; }
+      footer .links-area ul li:before {
+        display: none; }
+      footer .links-area ul li:first-child {
+        margin-top: 0; }
+      footer .links-area ul li a {
+        color: #070A52;
+        transition: 300ms all ease;
+        font-weight: 500; }
+        footer .links-area ul li a:hover {
+          color: #D21312; }
+  footer .copyRight-text {
+    margin-top: 16px;
+    border-top: 1px solid #070A52;
+    padding-top: 12px; }
+    footer .copyRight-text p {
+      font-size: 14px;
+      font-weight: 700; }
+
 /*# sourceMappingURL=myStyle.css.map */
