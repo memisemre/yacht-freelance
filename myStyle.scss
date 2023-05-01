@@ -365,100 +365,119 @@ header {
         }
     }
 }
-
-#yachts-catalog {
-    background: $background-gray;
-    flex-direction: column;
-
-    p {
-        margin: 0;
+#yachtCatalogPage{
+    .flexible-wrapper{
+        &:first-child{
+            padding: 0 !important;
+            margin-top: 16px;
+        }
     }
-
-    .container {
-        margin-bottom: 48px;
-
-        &:last-child {
+    #yachts-catalog {
+        background: $background-gray;
+        flex-direction: column;
+        .flexible-wrapper{
+            &:first-child{
+                background-color: red;
+                padding: 0 !important;
+            }
+        }
+        p {
             margin: 0;
         }
-
-        .catalog-card-wrapper {
-            border-radius: 8px;
-            background: $white;
-            padding: 32px;
-
-            .yacht-name {
-                font-size: 48px;
-                color: $blue-text;
-                font-weight: 700;
+        .col-6{
+            &:nth-child(odd){
+                margin-right: 32px;
             }
-
-            .yacht-infos-container {
-                .yacht-info {
-                    border-right: 2px solid white;
-                    background-color: $primary-gray;
-                    padding: 8px 16px;
-                    border-radius: 2px;
-
-                    .info-title {
-                        font-size: 14px;
-                        font-weight: 300;
-                    }
-
-                    .info-text {
-                        font-size: 20px;
-                        font-weight: 500;
-                        margin-left: 4px;
-                    }
-                }
-            }
+            margin-bottom: 32px;
         }
-
-        img {
-            width: 100%;
-            border-top-left-radius: 16px;
-            border-bottom-right-radius: 16px;
-        }
-
-        .controller-item-wrapper {
-            position: relative;
-
-            .controller-item-container {
-                margin-right: 48px;
-
-                &:after {
-                    margin: 0;
-                }
-
-                .controller-item-title {
-                    font-size: 12px;
-                    font-weight: 300;
-                    text-transform: uppercase;
-                }
+    
+        .container {
+            margin-bottom: 48px;
+    
+            &:last-child {
+                margin: 0;
             }
-
-            i {
-                font-size: 24px;
-                color: $primary-red;
-                margin-right: 16px;
-            }
-
-            .btn {
-                padding: 12px 24px !important;
+    
+            .catalog-card-wrapper {
                 border-radius: 8px;
-                border: 2px solid $primary-red;
-                color: $primary-red;
-                font-weight: 700;
-                transition: 500ms all ease-out;
-
-                &:hover {
-                    background-color: $thirdy-red;
-                    color: $white;
-                    transform: scale(1.1);
+                background: $white;
+                padding: 32px;
+    
+                .yacht-name {
+                    font-size: 48px;
+                    color: $blue-text;
+                    font-weight: 700;
+                }
+    
+                .yacht-infos-container {
+                    .yacht-info {
+                        border-right: 2px solid white;
+                        background-color: $primary-gray;
+                        padding: 8px 16px;
+                        border-radius: 2px;
+    
+                        .info-title {
+                            font-size: 14px;
+                            font-weight: 300;
+                        }
+    
+                        .info-text {
+                            font-size: 20px;
+                            font-weight: 500;
+                            margin-left: 4px;
+                        }
+                    }
+                }
+            }
+    
+            img {
+                width: 100%;
+                border-top-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+            }
+    
+            .controller-item-wrapper {
+                position: relative;
+    
+                .controller-item-container {
+                    margin-right: 48px;
+    
+                    &:after {
+                        margin: 0;
+                    }
+    
+                    .controller-item-title {
+                        font-size: 12px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                    }
+                }
+    
+                i {
+                    font-size: 24px;
+                    color: $primary-red;
+                    margin-right: 16px;
+                }
+    
+                .btn {
+                    padding: 12px 24px !important;
+                    border-radius: 8px;
+                    border: 2px solid $primary-red;
+                    color: $primary-red;
+                    font-weight: 700;
+                    transition: 500ms all ease-out;
+    
+                    &:hover {
+                        background-color: $thirdy-red;
+                        color: $white;
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
     }
 }
+
 
 footer {
     background-color: $background-gray;

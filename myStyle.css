@@ -221,61 +221,71 @@ header {
       #onBoarding-text p a:hover {
         color: #ED2B2A; }
 
-#yachts-catalog {
+#yachtCatalogPage .flexible-wrapper:first-child {
+  padding: 0 !important;
+  margin-top: 16px; }
+#yachtCatalogPage #yachts-catalog {
   background: #F0F2F8;
   flex-direction: column; }
-  #yachts-catalog p {
+  #yachtCatalogPage #yachts-catalog .flexible-wrapper:first-child {
+    background-color: red;
+    padding: 0 !important; }
+  #yachtCatalogPage #yachts-catalog p {
     margin: 0; }
-  #yachts-catalog .container {
+  #yachtCatalogPage #yachts-catalog .col-6 {
+    margin-bottom: 32px; }
+    #yachtCatalogPage #yachts-catalog .col-6:nth-child(odd) {
+      margin-right: 32px; }
+  #yachtCatalogPage #yachts-catalog .container {
     margin-bottom: 48px; }
-    #yachts-catalog .container:last-child {
+    #yachtCatalogPage #yachts-catalog .container:last-child {
       margin: 0; }
-    #yachts-catalog .container .catalog-card-wrapper {
+    #yachtCatalogPage #yachts-catalog .container .catalog-card-wrapper {
       border-radius: 8px;
       background: #FFFFFF;
       padding: 32px; }
-      #yachts-catalog .container .catalog-card-wrapper .yacht-name {
+      #yachtCatalogPage #yachts-catalog .container .catalog-card-wrapper .yacht-name {
         font-size: 48px;
         color: #070A52;
         font-weight: 700; }
-      #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info {
+      #yachtCatalogPage #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info {
         border-right: 2px solid white;
         background-color: #f2f2f2;
         padding: 8px 16px;
         border-radius: 2px; }
-        #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info .info-title {
+        #yachtCatalogPage #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info .info-title {
           font-size: 14px;
           font-weight: 300; }
-        #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info .info-text {
+        #yachtCatalogPage #yachts-catalog .container .catalog-card-wrapper .yacht-infos-container .yacht-info .info-text {
           font-size: 20px;
           font-weight: 500;
           margin-left: 4px; }
-    #yachts-catalog .container img {
+    #yachtCatalogPage #yachts-catalog .container img {
       width: 100%;
       border-top-left-radius: 16px;
       border-bottom-right-radius: 16px; }
-    #yachts-catalog .container .controller-item-wrapper {
+    #yachtCatalogPage #yachts-catalog .container .controller-item-wrapper {
       position: relative; }
-      #yachts-catalog .container .controller-item-wrapper .controller-item-container {
+      #yachtCatalogPage #yachts-catalog .container .controller-item-wrapper .controller-item-container {
         margin-right: 48px; }
-        #yachts-catalog .container .controller-item-wrapper .controller-item-container:after {
+        #yachtCatalogPage #yachts-catalog .container .controller-item-wrapper .controller-item-container:after {
           margin: 0; }
-        #yachts-catalog .container .controller-item-wrapper .controller-item-container .controller-item-title {
+        #yachtCatalogPage #yachts-catalog .container .controller-item-wrapper .controller-item-container .controller-item-title {
           font-size: 12px;
           font-weight: 300;
           text-transform: uppercase; }
-      #yachts-catalog .container .controller-item-wrapper i {
+      #yachtCatalogPage #yachts-catalog .container .controller-item-wrapper i {
         font-size: 24px;
         color: #D21312;
         margin-right: 16px; }
-      #yachts-catalog .container .controller-item-wrapper .btn {
+      #yachtCatalogPage #yachts-catalog .container .controller-item-wrapper .btn {
         padding: 12px 24px !important;
         border-radius: 8px;
         border: 2px solid #D21312;
         color: #D21312;
         font-weight: 700;
         transition: 500ms all ease-out; }
-        #yachts-catalog .container .controller-item-wrapper .btn:hover {
+        #yachtCatalogPage #yachts-catalog .container .controller-item-wrapper .btn:hover {
           background-color: #F15A59;
           color: #FFFFFF;
           transform: scale(1.1); }
